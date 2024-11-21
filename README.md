@@ -1,16 +1,5 @@
 # auto_route_issue
 
-A new Flutter project.
+This is a minimum reproducible app showing the strange behavior when trying to navigate with children parameters.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Expected behavior is that if the button is pressed from the first the tab, the ThirdTabRoute and the NestedRoute will be pushed (preferably in one action). Currently, it will open the nested page within that stack router index, but will not push the ThirdTabRoute even though it is explicitly pushed from first_tab.dart. (Once you do this, you must restart the app to see the expected behavior)
